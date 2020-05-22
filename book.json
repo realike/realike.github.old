@@ -1,0 +1,15 @@
+{
+    "plugins": [    
+      "search-pro",
+      "-search",
+      "-lunr",
+      "-sharing",
+      "anchor-navigation-ex"
+    ],
+    "pluginsConfig": {
+        "anchor-navigation-ex": {
+            "showLevel": false
+        }
+    }
+  }
+  
