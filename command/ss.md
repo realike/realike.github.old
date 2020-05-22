@@ -8,8 +8,8 @@
 
     # check
     /usr/bin/v2ray/v2ray -test -config=/etc/v2ray/config.json
-    service v2ray start
-    service v2ray restart
+    systemctl start v2ray
+    systemctl restart v2ray
 
     # BBR
     bash -c 'echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf'
@@ -18,6 +18,9 @@
     sysctl net.ipv4.tcp_congestion_control
 
 **client**
+
+    # enable
+    systemctl enable v2ray
 
     # /etc/v2ray/config.json
     {
